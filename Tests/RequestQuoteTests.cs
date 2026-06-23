@@ -26,6 +26,6 @@ public class RequestQuoteTests : PlaywrightFixture
 
         await rfqPage.FillRequiredFieldsAsync(formData);
         await rfqPage.SubmitAsync();
-        await rfqPage.AssertSuccessMessageVisibleAsync();
+        rfqPage.AssertSuccessMessage();
     }
 }

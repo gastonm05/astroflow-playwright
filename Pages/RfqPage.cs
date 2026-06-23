@@ -63,11 +63,9 @@ public class RfqPage : BasePage
         return this;
     }
 
-    public async Task<RfqPage> AssertSuccessMessageVisibleAsync()
+    public void AssertSuccessMessage()
     {
         Assert.That(_dialogMessage, Does.Contain("Thank you for your request"));
-        await Task.CompletedTask;
-        return this;
     }
 
     private static string MapIndustryValue(string industry)
