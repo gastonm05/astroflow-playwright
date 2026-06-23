@@ -1,0 +1,27 @@
+# .gitignore for C# .NET 8 + Playwright project
+# Ignore build outputs
+bin/
+obj/
+
+# Test results
+test-results/
+TestResults/
+
+# Playwright artifacts
+playwright-traces/
+playwright-videos/
+playwright-screenshots/
+
+# IDE and user files
+.vs/
+*.user
+
+# SpecFlow
+.specflow/
+
+# Node / Playwright runtime files generated under build output
+**/.playwright/
+
+# Optional: editor swap files
+*~
+*.swp
