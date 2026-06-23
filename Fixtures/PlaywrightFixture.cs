@@ -17,7 +17,7 @@ public abstract class PlaywrightFixture
 
         Browser = await Playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless = false
+            Headless = true
         });
 
         BrowserContext = await Browser.NewContextAsync(new BrowserNewContextOptions
